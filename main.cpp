@@ -40,7 +40,7 @@ void triangle(float a, float b, float c){
 
 
 int gcd(int n1, int n2){
-    for (int i = n1; i >= 1; i--){
+    for (int i = n1; i >= 1; --i){
         if ((n1 % i == 0) && (n2 % i == 0))
             return i;
     }
@@ -50,7 +50,5 @@ int gcd(int n1, int n2){
 int main(){
     triangle(3, 4, 50);
     triangle(3, 4, 5);
-    cout << gcd(1, 10) << '\n';
-    cout << gcd(75, 100) << '\n';
-    cout << gcd(1234, 4322) << '\n';
+    cout << gcd(5436, 4422) << '\n';
 }
